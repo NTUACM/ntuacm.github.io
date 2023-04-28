@@ -1,7 +1,7 @@
 <template>
   <ContentBase>
     <el-row :gutter="20" class="ICPC">
-      <el-card>
+      <el-card shadow="hover">
         <h2>ICPC简介</h2>
         <p>
           国际大学生程序设计竞赛（英文全称：International Collegiate Programming Contest，
@@ -13,7 +13,7 @@
       </el-card>
     </el-row>
     <el-row :gutter="20" class="CCPC">
-      <el-card>
+      <el-card shadow="hover">
         <h2>CCPC简介</h2>
         <p>
           中国大学生程序设计竞赛（China Collegiate Programming Contest， CCPC）是由教育部高等学校
@@ -24,7 +24,7 @@
       </el-card>
     </el-row>
     <el-row :gutter="20" class="lanqiao">
-      <el-card>
+      <el-card shadow="hover">
         <h2>蓝桥杯简介</h2>
         <p>
           蓝桥杯全国软件和信息技术专业人才大赛，简称蓝桥杯。比赛内容涵盖计算机基础知识、程式设计能力、
@@ -37,7 +37,7 @@
       </el-card>
     </el-row>
     <el-row :gutter="20" class="tianti">
-      <el-card>
+      <el-card shadow="hover">
         <h2>天梯赛简介</h2>
         <p>
           团体程序设计天梯赛是中国高校计算机大赛的竞赛版块之一，赛旨在提升学生计算机问题求解水平，
@@ -65,5 +65,10 @@ export default {
 .el-row {
   margin-bottom: 20px;
   font-size: 18px;
+}
+
+.el-card:hover {
+    box-shadow: 2px 2px 10px lightgrey;
+    transition: 500ms;
 }
 </style>
