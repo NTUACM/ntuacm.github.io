@@ -55,17 +55,6 @@ export default {
 .container {
   margin: 20px;
 }
-.text {
-  font-size: 14px;
-}
-
-.item {
-  padding: 18px 0;
-}
-
-.box-card {
-  width: 480px;
-}
 
 .notice {
   height: 300px;
