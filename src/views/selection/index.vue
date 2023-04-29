@@ -31,7 +31,7 @@
     <el-row>
       <el-card shadow="hover" :body-style="{ padding: '10px' }" class="content">
         <h3>技能树</h3>
-        <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" />
+        <el-tree :data="data" :props="defaultProps" accordion @node-click="handleNodeClick" />
       </el-card>
     </el-row>
   </ContentBase>

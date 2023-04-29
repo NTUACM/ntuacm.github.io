@@ -1,6 +1,6 @@
 export default {
   // 代办事项
-  skill: [{
+  problemset: [{
     label: '基础算法',
     children: [{
       label: '前缀和'
