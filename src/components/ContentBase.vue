@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <el-card class="content">
-      <slot></slot>
+    <el-card class="content" shadow="never" :body-style="{ border:'1px solid #D2D2D2' }">
+      <slot />
     </el-card>
   </div>
 </template>
@@ -18,4 +18,5 @@ export default {
   height: 100%;
   margin: 20px auto;
 }
+
 </style>

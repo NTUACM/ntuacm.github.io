@@ -13,7 +13,7 @@
       </el-card>
     </el-row>
     <el-row :gutter="20" class="CCPC">
-      <el-card shadow="hover">
+      <el-card shadow="hover" :body-style="{ transition: '500ms' }">
         <h2>CCPC简介</h2>
         <p>
           中国大学生程序设计竞赛（China Collegiate Programming Contest， CCPC）是由教育部高等学校
