@@ -124,12 +124,50 @@ export const constantRoutes = [
   {
     path: '/summary',
     component: Layout,
-    children: [{
-      path: 'index',
-      name: 'summary',
-      component: () => import('@/views/summary'),
-      meta: { title: '比赛总结', icon: 'el-icon-user' }
-    }]
+    redirect: '/summary/index',
+    children: [
+      {
+        path: 'index',
+        name: 'Summary',
+        component: () => import('@/views/summary/index.vue'),
+        meta: { title: '比赛总结', icon: 'el-icon-user' }
+      },
+      {
+        path: '/summary/problem',
+        name: 'ProblemA',
+        hidden: true,
+        meta: { title: 'problemA' },
+        component: () => import('@/views/summary/problem/A.vue')
+      },
+      {
+        path: '/summary/problem',
+        name: 'ProblemB',
+        hidden: true,
+        meta: { title: 'problemB' },
+        component: () => import('@/views/summary/problem/B.vue')
+      },
+      {
+        path: '/summary/problem',
+        name: 'ProblemC',
+        hidden: true,
+        meta: { title: 'problemC' },
+        component: () => import('@/views/summary/problem/C.vue')
+      },
+      {
+        path: '/summary/problem',
+        name: 'ProblemD',
+        hidden: true,
+        meta: { title: 'problemD' },
+        component: () => import('@/views/summary/problem/D.vue')
+      },
+      {
+        path: '/summary/problem',
+        name: 'ProblemE',
+        hidden: true,
+        meta: { title: 'problemE' },
+        component: () => import('@/views/summary/problem/E.vue')
+      }
+    ]
   },
 
   {
@@ -146,6 +184,14 @@ export const constantRoutes = [
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]
+
+/**
+ * asyncRoutes
+ * the routes that need to be dynamically loaded based on user roles
+ */
+// export const asyncRoutes = [
+
+// ]
 
 const createRouter = () => new Router({
   // mode: 'history', // require service support
