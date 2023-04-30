@@ -56,17 +56,6 @@ export const constantRoutes = [
   },
 
   {
-    path: '/introduction',
-    component: Layout,
-    children: [{
-      path: 'index',
-      name: 'Introduction',
-      component: () => import('@/views/introduction'),
-      meta: { title: '简介', icon: 'el-icon-user' }
-    }]
-  },
-
-  {
     path: '/member',
     component: Layout,
     children: [{
