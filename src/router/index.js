@@ -62,7 +62,7 @@ export const constantRoutes = [
       path: 'index',
       name: 'Member',
       component: () => import('@/views/member'),
-      meta: { title: '成员', icon: 'el-icon-time' }
+      meta: { title: '成员', icon: 'el-icon-user' }
     }]
   },
 
@@ -73,7 +73,7 @@ export const constantRoutes = [
       path: 'index',
       name: 'Match',
       component: () => import('@/views/match'),
-      meta: { title: '比赛', icon: 'el-icon-tickets' }
+      meta: { title: '比赛', icon: 'el-icon-trophy' }
     }]
   },
 
@@ -84,7 +84,7 @@ export const constantRoutes = [
       path: 'index',
       name: 'Data',
       component: () => import('@/views/data'),
-      meta: { title: '资料', icon: 'el-icon-files' }
+      meta: { title: '资料', icon: 'el-icon-folder-opened' }
     }]
   },
 
@@ -95,7 +95,7 @@ export const constantRoutes = [
       path: 'index',
       name: 'Selection',
       component: () => import('@/views/selection'),
-      meta: { title: '队员选拔', icon: 'el-icon-user' }
+      meta: { title: '队员选拔', icon: 'el-icon-help' }
     }]
   },
 
@@ -106,7 +106,7 @@ export const constantRoutes = [
       path: 'index',
       name: 'Training',
       component: () => import('@/views/training'),
-      meta: { title: '队员集训', icon: 'el-icon-user' }
+      meta: { title: '队员集训', icon: 'el-icon-finished' }
     }]
   },
 
@@ -119,7 +119,7 @@ export const constantRoutes = [
         path: 'index',
         name: 'Summary',
         component: () => import('@/views/summary/index.vue'),
-        meta: { title: '比赛总结', icon: 'el-icon-user' }
+        meta: { title: '比赛总结', icon: 'el-icon-edit-outline' }
       },
       {
         path: '/summary/problem',
@@ -166,7 +166,7 @@ export const constantRoutes = [
       path: 'index',
       name: 'Achievement',
       component: () => import('@/views/achievement'),
-      meta: { title: '历史成绩', icon: 'el-icon-user' }
+      meta: { title: '历史成绩', icon: 'el-icon-medal-1' }
     }]
   },
 
