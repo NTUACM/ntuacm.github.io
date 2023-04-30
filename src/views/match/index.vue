@@ -2,7 +2,7 @@
   <ContentBase>
     <el-row :gutter="20" class="ICPC">
       <el-card shadow="hover">
-        <h2>ICPC简介</h2>
+        <h3>ICPC简介</h3>
         <p>
           国际大学生程序设计竞赛（英文全称：International Collegiate Programming Contest，
           简称ICPC）是由美国计算机协会（ACM）主办的年度竞赛，旨在展示大学生创新能力、团队精神和在压力下
@@ -14,7 +14,7 @@
     </el-row>
     <el-row :gutter="20" class="CCPC">
       <el-card shadow="hover" :body-style="{ transition: '500ms' }">
-        <h2>CCPC简介</h2>
+        <h3>CCPC简介</h3>
         <p>
           中国大学生程序设计竞赛（China Collegiate Programming Contest， CCPC）是由教育部高等学校
           计算机类专业教学指导委员会主办的面向全国高校大学生的年度学科竞赛，旨在激发学生学习计算机领域专业知识
@@ -25,7 +25,7 @@
     </el-row>
     <el-row :gutter="20" class="lanqiao">
       <el-card shadow="hover">
-        <h2>蓝桥杯简介</h2>
+        <h3>蓝桥杯简介</h3>
         <p>
           蓝桥杯全国软件和信息技术专业人才大赛，简称蓝桥杯。比赛内容涵盖计算机基础知识、程式设计能力、
           算法设计、数字电路和模拟电路等。2021年，入选中国高等教育学会高校竞赛评估与管理体系研究工作组发布的
@@ -38,7 +38,7 @@
     </el-row>
     <el-row :gutter="20" class="tianti">
       <el-card shadow="hover">
-        <h2>天梯赛简介</h2>
+        <h3>天梯赛简介</h3>
         <p>
           团体程序设计天梯赛是中国高校计算机大赛的竞赛版块之一，赛旨在提升学生计算机问题求解水平，
           增强学生程序设计能力，培养团队合作精神，提高大学生的综合素质，同时丰富校园学术气氛，
@@ -65,10 +65,13 @@ export default {
 .el-row {
   margin-bottom: 20px;
   font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
 }
 
 .el-card:hover {
     box-shadow: 2px 2px 10px lightgrey;
     transition: 500ms;
 }
+
 </style>

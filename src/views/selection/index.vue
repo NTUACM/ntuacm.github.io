@@ -2,16 +2,16 @@
   <ContentBase>
     <el-row :gutter="20" class="item">
       <el-col :span="8">
-        <el-card shadow="hover" :body-style="{ padding: '10px' }" class="content">
+        <el-card :body-style="{ padding: '10px' }" class="content">
           <h3 class="title">欢迎加入NTUACM！</h3>
           <img src="@/assets/images/ACMQQ.png" class="ACMQQ">
         </el-card>
       </el-col>
 
       <el-col :span="16">
-        <el-card class="content" shadow="hover">
+        <el-card class="content">
           <h3 class="title">新生选拔题</h3>
-          <el-card class="notice" shadow="hover">
+          <el-card class="notice">
             <div>
               这里填写本次选拔的注意事项
             </div>
@@ -26,8 +26,8 @@
     </el-row>
 
     <el-row>
-      <el-card shadow="hover" :body-style="{ padding: '10px' }" class="content">
-        <h3 class="title">技能树</h3>
+      <el-card :body-style="{ padding: '10px' }" class="content">
+        <h3>技能树</h3>
         <el-tree :data="data" :props="defaultProps" accordion @node-click="handleNodeClick" />
       </el-card>
     </el-row>
@@ -62,12 +62,13 @@ export default {
 .item .content .notice {
   padding: 15px;
   position: relative;
+  height: 350px;
 }
 
 .btn {
   position: absolute;
   right: 20px;
-  bottom: 10px;
+  bottom: 15px;
 }
 
 .btn:hover {
