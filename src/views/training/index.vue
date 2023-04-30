@@ -50,8 +50,35 @@
 
     <el-row>
       <el-card shadow="hover" :body-style="{ padding: '10px' }" class="content">
-        <h3>技能树</h3>
-        <el-tree :data="problemset" :props="defaultProps" accordion @node-click="handleNodeClick" />
+        <h3>CCPC/ICPC训练</h3>
+        <el-table
+          :data="problemset"
+          style="width:100%"
+        >
+          <el-table-column
+            label="知识点"
+          >
+            <template slot-scope="scope">
+              {{ scope.row.title }}
+            </template>
+          </el-table-column>
+
+          <el-table-column
+            label="练习题"
+          >
+            <template slot-scope="{row}">
+              <el-link :href="row.addr" target="_blank" class="addr" :underline="false" type="primary">{{ row.name }}</el-link>
+            </template>
+          </el-table-column>
+
+          <el-table-column
+            label="难度"
+          >
+            <template slot-scope="scope">
+              <el-tag :type="renderColor(scope.row.hard)">{{ scope.row.hard }}</el-tag>
+            </template>
+          </el-table-column>
+        </el-table>
       </el-card>
     </el-row>
   </ContentBase>
@@ -69,6 +96,15 @@ export default {
     return {
       rank: rank.rank,
       problemset: problemset.problemset
+    }
+  },
+  methods: {
+    renderColor(hard) {
+      if (hard === '简单') {
+        return 'success'
+      } else if (hard === '中等') {
+        return 'warning'
+      } else if (hard === '困难') { return 'danger' }
     }
   }
 }

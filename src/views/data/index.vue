@@ -38,7 +38,7 @@
               width="600"
             >
               <template slot-scope="{row}">
-                <el-link :href="row.url" target="_blank" class="url" :underline="false">{{ row.url }}</el-link>
+                <el-link :href="row.url" target="_blank" class="url" :underline="false" type="primary">{{ row.url }}</el-link>
               </template>
             </el-table-column>
           </el-table>
@@ -54,6 +54,7 @@
             target="_blank"
             class="url"
             :underline="false"
+            type="primary"
           >
             屈婉玲的算法设计与分析课程
           </el-link>
