@@ -30,15 +30,19 @@
       <el-col :span="18">
         <el-card class="news">
           <h2>新闻</h2>
+          <p><strong>2023.5.13：2023国际大学生程序设计竞赛全国邀请赛（陕西）</strong></p>
+          <p>集训队成员在今年的ICPC2023全国邀请赛西安站中取得佳绩，由周杰，韩愈，张世梁三位同学组成的“集思广益队”在众多队伍中脱颖而出，斩获铜牌！</p>
+          <p><img src="@/assets/images/ICPC2023-Xian-Invention.jpg" alt="ladder_race"></p>
+          <p><img src="@/assets/images/ICPC2023-Xian-bronze.jpg" alt="ladder_race"></p>
           <p><strong>2023.4：第十四届蓝桥杯</strong></p>
           <p>集训队成员在第十四届蓝桥杯江苏省比赛中取得佳绩，xxx获得江苏省一等奖，xxx获得江苏省二等奖，xx获得江苏省三等奖.......</p>
           <p><strong>2023.4：第六届中国高校计算机大赛——团体程序设计天梯赛</strong></p>
           <p><a href="https://news.ntu.edu.cn/2023/0425/c9a211147/page.htm">集训队在第八届中国高校计算机大赛——团体程序设计天梯赛中获得佳绩</a></p>
           <p><img src="@/assets/images/Ladder_race.jpg" alt="ladder_race"></p>
-          <h2 id="goal"><a href="#goal" class="headerlink" title="goal"></a>目标</h2>
-          <p><del><a target="_blank">赛季目标？</a></del></p>
-          <h2 id="responsibility"><a href="#responsibility" class="headerlink" title="responsibility"></a>职责</h2>
-          <p><del><a target="_blank">待补充</a></del></p>
+          <h2 id="goal"><a href="#goal" class="headerlink" title="goal" />目标</h2>
+          <p><del><a target="_blank">xxxxx</a></del></p>
+          <h2 id="responsibility"><a href="#responsibility" class="headerlink" title="responsibility" />职责</h2>
+          <p><del><a target="_blank">xxxxx</a></del></p>
         </el-card>
       </el-col>
     </el-row>
