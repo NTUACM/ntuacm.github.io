@@ -50,7 +50,7 @@
         <el-card>
           <h2>慕课</h2>
           <el-link
-            href="https://www.bilibili.com/video/BV1Ls411W7PB/?spm_id_from=333.337.search-card.all.click&vd_source=786aab0767d6db91fbbe265aa2efc4b5" 
+            href="https://www.bilibili.com/video/BV1Ls411W7PB/?spm_id_from=333.337.search-card.all.click&vd_source=786aab0767d6db91fbbe265aa2efc4b5"
             target="_blank"
             class="url"
             :underline="false"

@@ -31,11 +31,11 @@ import Layout from '@/layout'
  * all roles can be accessed
  */
 export const constantRoutes = [
-  // {
-  //   path: '/login',
-  //   component: () => import('@/views/login/index'),
-  //   hidden: true
-  // },
+  {
+    path: '/login',
+    component: () => import('@/views/login/index'),
+    hidden: true
+  },
 
   {
     path: '/404',
@@ -170,6 +170,16 @@ export const constantRoutes = [
     }]
   },
 
+  {
+    path: '/photos',
+    component: Layout,
+    children: [{
+      path: 'index',
+      name: 'Photos',
+      component: () => import('@/views/photos'),
+      meta: { title: '相册', icon: 'el-icon-camera-solid' }
+    }]
+  },
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]

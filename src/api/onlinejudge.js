@@ -11,7 +11,7 @@ export default {
   }, {
     id: '3', // 编号
     name: '杭电 OJ', // 名称
-    url: 'acm.hdu.edu.cn' // 网址
+    url: 'http://acm.hdu.edu.cn' // 网址
   }, {
     id: '4', // 编号
     name: 'CodeForces', // 名称
@@ -19,7 +19,7 @@ export default {
   }, {
     id: '5', // 编号
     name: '洛谷', // 名称
-    url: 'www.luogu.com.cn' // 网址
+    url: 'https://www.luogu.com.cn/' // 网址
   }, {
     id: '6', // 编号
     name: 'Virtual Judge', // 名称

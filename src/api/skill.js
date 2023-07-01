@@ -86,12 +86,6 @@ export default {
       label: '区间DP'
     }, {
       label: '树形DP'
-    }, {
-      label: 'SPFA'
-    }, {
-      label: 'Floyd'
-    }, {
-      label: '树形DP'
     }]
   }],
   defaultProps: {
