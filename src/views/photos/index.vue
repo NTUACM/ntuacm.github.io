@@ -4,7 +4,8 @@
     <Carousel2 />
     <div class="thanks">
       <span class="saying">
-        在此衷心感谢计211黄一麟、软工211杨少宇对本网站的贡献！
+        <span><strong>Acknowledgments</strong></span>
+Coach Xiang Chen initially designed this homepage. It was developed by Yilin Huang (Grade-21 majoring in CS) and Shaoyu Yang (Grade-20 majoring in SE) who are honorary members of NTUACM. Thank them for their outstanding contributions!
       </span>
     </div>
   </ContentBase>
